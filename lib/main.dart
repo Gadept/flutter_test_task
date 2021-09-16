@@ -74,10 +74,10 @@ class _RandomColorsState extends State<RandomColors> {
   }
 
   Widget setupAlertDialogContainer(context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Column(
+    return SizedBox(
+        width: 50,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ListView.builder(
               shrinkWrap: true,
@@ -101,8 +101,6 @@ class _RandomColorsState extends State<RandomColors> {
               },
             )
           ],
-        )
-      ],
-    );
+        ));
   }
 }
